@@ -10,14 +10,26 @@
 # #min_by
 
 
+# def key_for_min_value(name_hash)
+#   no_value = nil
+#   min_value = 0
+#   name_hash.each do |key, value|
+#     if min_value = 0 || min_value < value
+#       min_value = value
+#       no_value = key
+#     end
+#   end
+#   puts no_value
+# end
+
 def key_for_min_value(name_hash)
-  no_value = nil
-  min_value = 0
-  name_hash.each do |key, value|
-    if min_value = 0 || min_value < value
-      min_value = value
-      no_value = key
+    min_v = 0
+    empty_hash = nil
+    name_hash.each do |key, value|
+        if min_v == 0 || value < min_v
+            min_v = value
+            empty_hash = key
+        end
     end
-  end
-  puts no_value
+    empty_hash
 end
