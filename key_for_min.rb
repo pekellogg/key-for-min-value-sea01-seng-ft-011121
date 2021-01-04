@@ -18,6 +18,6 @@ def key_for_min_value(name_hash)
       min_value = value
       no_value = key
     end
+  end
   puts no_value
-  end # else nil
 end
