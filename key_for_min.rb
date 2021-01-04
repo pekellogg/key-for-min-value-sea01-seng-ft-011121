@@ -17,8 +17,7 @@ def key_for_min_value(name_hash)
     if min_value = nil || min_value < value
       min_value = value
       no_value = key
-    else no_value
     end
   end # else nil
-  puts name_hash[key][min_value]
+  puts key
 end
